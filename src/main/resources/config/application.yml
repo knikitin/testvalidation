@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    show_sql: true
+    database-platform: org.hibernate.dialect.PostgreSQL82Dialect
+    open-in-view: false
+    database: postgresql
+    properties:
+        hibernate.generate_statistics: false
+        # Replace with "validate""create"
+        hibernate.hbm2ddl.auto: validate
+  datasource:
+    # dev profile may be used in local deployment with different hosts DB, by default localhost
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: ${postgres_intapp_password}
+    driver-class-name: org.postgresql.Driver
+
+server:
+  port: 8092
