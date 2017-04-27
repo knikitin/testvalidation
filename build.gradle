@@ -22,6 +22,10 @@ repositories {
 	mavenCentral()
 }
 
+bootRun {
+	systemProperty("POSTGRES_INTAPP_PASSWORD", "${postgres_intapp_password}")
+}
+
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')

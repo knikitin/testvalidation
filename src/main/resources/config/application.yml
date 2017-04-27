@@ -12,7 +12,7 @@ spring:
     # dev profile may be used in local deployment with different hosts DB, by default localhost
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
-    password: ${postgres_intapp_password}
+    password: ${POSTGRES_INTAPP_PASSWORD}
     driver-class-name: org.postgresql.Driver
 
 server:
