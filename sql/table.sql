@@ -12,3 +12,8 @@ WITH (
 );
 ALTER TABLE public.testvalidation
   OWNER TO postgres;
+
+INSERT INTO testvalidation (id, description, tenant, name, email)
+VALUES (1, 'desc', 'wilko', 'Admin', 'admin@example.com'),
+(2, 'desc', 'wilko', 'User', 'user@example.com'),
+;
